@@ -1,0 +1,10 @@
+<a href="www.youtube.com/watch?v=9NSOB-wqhAU">www.youtube.com/watch?v=9NSOB-wqhAU</a>
+<script>
+    window.onload = () => (
+        window.open(
+            /Android/i.test(navigator.userAgent)
+                ? 'intent://www.youtube.com/watch?v=9NSOB-wqhAU#Intent;package=com.google.android.youtube;scheme=https;end'
+                : 'youtu.be/9NSOB-wqhAU'
+        );
+    ); 
+</script>
